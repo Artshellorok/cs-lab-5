@@ -28,6 +28,6 @@ RUN sed -i "s/PATH_MAX/1024/g" /MegaMario_v1.7_full/src/Global.h
 
 RUN apt-get install -y alsa-base alsa-utils alsa-tools libpulse0 libasound2 libasound2-plugins libsndfile1-dev
 
-ADD alsa.conf /usr/share/alsa/alsa.conf
+COPY alsa.conf /usr/share/alsa/alsa.conf
 
 RUN cd MegaMario_v1.7_full && make PREFIX=/usr && make PREFIX=/usr install
