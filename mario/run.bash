@@ -15,4 +15,4 @@ docker run  -ti --rm \
             --net=host \
             --privileged \
             --name mario mario \
-            bash
+            megamario
